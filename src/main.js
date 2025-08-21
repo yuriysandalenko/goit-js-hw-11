@@ -6,7 +6,7 @@ import { createGallery, clearGallery, showLoader, hideLoader } from "./js/render
 
 const form = document.querySelector(".form");
 
-form.addEventListener("submit", async (e) => {
+form.addEventListener("submit", (e) => {
   e.preventDefault();
   const query = form.elements["search-text"].value.trim();
 
